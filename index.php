@@ -107,8 +107,7 @@
 
                 function makeRecord($name, $address, $email, $phone, $fileName)
                 {
-                    $file = fopen($fileName, "a");
-                    if ($file) {
+                    if (fopen($fileName, "a")) {
                         fwrite($file, "$name, $address, $email, $phone\n");
                         fclose($file);
                     } else {
