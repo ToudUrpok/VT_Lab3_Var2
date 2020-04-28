@@ -3,52 +3,50 @@
 	<head>
 		<title>Lab3_Var2</title>
 		<meta charset="utf-8">
-        <style type="text/css">
-            BUTTON {
-                margin-left:20px;
-            }
-            INPUT {
-                margin-left: 10px;
-            }
-            #work_block {
-                margin-bottom: 30px;
-            }
-            #message {
-                color: red;
-            }
-            LI, h4, h3{
-                color: blue;
-            }
-        </style>
+        	<style type="text/css">
+            		BUTTON {
+                		margin-left:20px;
+            		}
+            		INPUT {
+                		margin-left: 10px;
+            		}
+			#work_block {
+				margin-bottom: 30px;
+			}
+			#message {
+				color: red;
+			}
+			LI, h4, h3{
+				color: blue;
+			}
+        	</style>
 	</head>
 	<body>
-        <h2>Работа с файлом с информацией о компаниях</h2>
-        
+        	<h2>Работа с файлом с информацией о компаниях</h2>
 		<div id="work_block">
-			<form method="GET" accept-charset="utf-8">
-                <p>	
-					<label for="name">name: </label>
-					<input type="text" name="name" id="name" required/>
-                    <input type="submit" name="search" value="Найти"/>
-                </p>	
-                <p>	
-					<label for="address">addres: </label>
-					<input type="text" name="address" id="address" pattern="[^,]+"/>
-                </p>
-                <p>
-					<label for="phone">phone: </label>
-					<input type="tel" name="phone" id="phone" placeholder="+37529......." pattern="\+37529[0-9]{7}"/>
-                </p>
-                <p>
-					<label for="email">email: </label>
-					<input type="email" name="email" id="email"/>
-                    <input type="submit" name="add" value="Добавить"/>
-			     </p>	
-			</form>
+		<form method="GET" accept-charset="utf-8">
+                	<p>	
+				<label for="name">name: </label>
+				<input type="text" name="name" id="name" required/>
+                    		<input type="submit" name="search" value="Найти"/>
+                	</p>	
+                	<p>	
+				<label for="address">addres: </label>
+				<input type="text" name="address" id="address" pattern="[^,]+"/>
+                	</p>
+                	<p>
+				<label for="phone">phone: </label>
+				<input type="tel" name="phone" id="phone" placeholder="+37529......." pattern="\+37529[0-9]{7}"/>
+                	</p>
+                	<p>
+				<label for="email">email: </label>
+				<input type="email" name="email" id="email"/>
+                    		<input type="submit" name="add" value="Добавить"/>
+			</p>	
+		</form>
 		</div>
 		
         <?php
-        
                 define("FILEPATH", "companies\companies.csv");
                 define("ABSENTMESS", "информация отсутствует");
         
@@ -156,8 +154,6 @@
                     }
                 }
                 
-                
-        
                 function printInfo($name, $items = [])
                 {
                     
