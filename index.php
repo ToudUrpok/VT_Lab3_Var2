@@ -33,7 +33,7 @@
                 die("Ошибка " . mysqli_error($link));
             if ($result)
             {
-                $address = '193.168.3.23'; //$_SERVER['REMOTE_ADDR']
+                $address = $_SERVER['REMOTE_ADDR'];
                 $addresses;
                 $amounts;
 
