@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Kaushan', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #fff;
+  
+    background: url("../images/intro.jpg");
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   
+}
+
+h1, h3 {
+    margin: 0;
+    color: #FFD700;
+}
+
+article {
+    max-width: 95%;
+    width: 100%;
+    margin: 250px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    margin-top: -20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;   
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0;
+}
+
+
+/* Nav */
+.nav {
+    font-size: 20;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #FFD700;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .2s linear;
+}
+
+.nav__link:hover {
+    color: #FFD700;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+.active{
+	background-color: #fff;
+	color: #000;
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+.copyright {
+    margin-top: 50px;
+    color: #fff;
+    
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-decoration: none;
+}
+
+.copyright:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #FFD700;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+}
+
+.copyright:hover {
+    color: #FFD700;
+}
+
+.content-plate {
+	padding: 0 0 20px 20px;
+	background: inherit;
+}
+.content-plate img {
+	max-width: 100%;
+    margin: 20px auto;
+}
+
+.content-plate-title {
+	padding: 15px 0 15px 0;
+	width: 100%;
+	margin: 0 0 40px 0;
+}
+
+
+.content-plate h1 {
+	font: bold ;
+	text-transform: uppercase;	
+}
+
+.content-plate h3 {
+	width: 100%;
+	font: bold Arial, Helvetica;
+	margin: 0 0 21px 0;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 30px;
+}

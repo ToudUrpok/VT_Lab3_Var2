@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    font-family: 'Kaushan', sans-serif;
+    
+    font-size: 20px;
+    line-height: 1.6;
+    color: #fff;
+    background: url("../images/intro.jpg");
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+h2 {
+    margin: 0;
+}
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.intro__inner {
+    width: 100%;
+    
+    margin: 210px auto 0;
+
+    text-align: center;
+}
+
+.intro__title {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    
+    font-size: 30px;
+    color: #F5FA99;
+}
+
+
+
+/* Header */
+.header {
+    width: 100%;
+    margin-top: -20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0;
+}
+
+
+/* Nav */
+.nav {
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #FFD700;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .2s linear;
+}
+
+.nav__link:hover {
+    color: #FFD700;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+.active{
+	background-color: #fff;
+	color: #000;
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+.copyright {
+    margin-top: 0 px;
+    color: #fff;
+    
+    display: block;
+    vertical-align: bottom;
+    position: relative;
+    text-decoration: none;
+}
+
+.copyright:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #FFD700;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+
+}
+
+.copyright:hover {
+    color: #FFD700;
+}
+
+table {
+    width: 100%;
+    
+    display: table;
+    border-collapse: collapse;
+
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+/*Season-Tournaments*/
+.tournaments-tbl {
+	width: 100%;
+	clear: both;
+	margin: 0 0 18px 18px;
+}
+
+.tournaments-tbl tr td, .tournaments-tbl tr th {
+	padding: 4px 0;
+	border-bottom: 2px solid #F5FA99;
+	text-align: center;
+	line-height: 25px;
+	vertical-align: middle;
+	/*white-space: nowrap;*/
+
+}
+
+.tournaments-tbl tr h6 {
+	font: bold 15px Arial, Helvetica, sans-serif;
+}
+
+.tournaments-tbl tr #actual-month {
+	color: #e2e4e6;
+}
+
+.tournaments-tbl tr img {
+	margin: 0 0 0 2px;
+}
+
+.tournaments-tbl tr#leader {
+	font-weight: bold;
+}
+
+.tournaments-tbl tr .left {
+	text-align: left;
+	padding-left: 4px;
+	font-weight: bold;
+}
+
+.tournaments-tbl tr .left-nob {
+	text-align: left;
+	padding-left: 4px;
+	font-weight: normal;
+	white-space: normal;
+}
+
+.tournaments-tbl tr .first-left {
+	font-weight: normal;
+}
+
+.tournaments-tbl tr td a {
+	text-decoration: none;
+}
+
+.tournaments-tbl .left .selectArea .left {
+	padding: 0;
+}
+
+.tournaments-tbl tr td .home-match, .tournaments-tbl tr td .guest-match, .tournaments-tbl tr td .cancelled {
+	background-color: #e2e4e6;
+	padding: 0 5%;
+	margin: 0 auto;
+	/*border-right: 1px solid #fff;*/
+}
+
+.tournaments-tbl tr td .cancelled {
+	background-color: #f98787;
+}
+
+.tournaments-tbl tr td span.cancelled {
+	color: #000;
+}
+
+/* TECHNICAL RESULT */
+.tournaments-tbl tr td .technical {
+	background-color: #99CCFF;
+}
+
+.tournaments-tbl tr td span.technical {
+	color: #000;
+}
+
+/* END */
+
+.tournaments-tbl tr td .guest-match {
+	background-color: #ffee58;
+}
+
+.tournaments-tbl .leader-bg {
+	background: #e2e4e6;
+}
+
+.tournaments-tbl td .percent-line {
+	width: 15%;
+	background-color: #1e6299;
+	height: 3px;
+	margin: 6px 10px 0 0;
+	font-size: 0;
+	display: inline;
+	float: left;
+}
+
+.tournaments-tbl td .percent {
+	float: left;
+	color: #4c4c4c;
+}
+
